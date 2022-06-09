@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Registration Form</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar-dark bg-dark">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-light text-center">Business Registration Form</h1>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="heading">
+        <p class="labels">
+          To register your business, please fill in the form below.
+        </p>
+        <p>
+          Please provide all required details to register your business with us
+        </p>
+      </div>
+      <form>
+        <div class="row">
+          <p class="labels">Business Owner <span class="danger">*</span></p>
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              name="firstname"
+              placeholder="First name"
+              aria-label="First name"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              name="lastname"
+              placeholder="Last name"
+              aria-label="Last name"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <p class="labels">Business Name <span class="danger">*</span></p>
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              name="business-name"
+              placeholder="Business name"
+              aria-label="Business name"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <p class="labels">Contact Number <span class="danger">*</span></p>
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              name="phone"
+              placeholder="Enter contact number"
+              aria-label="Contact number"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <p class="labels">Email <span class="danger">*</span></p>
+          <div class="col">
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder=""
+              aria-label="email"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <p class="labels">Address <span class="danger">*</span></p>
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              name="street"
+              placeholder="Street Address"
+              aria-label="Street address"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input
+              type="text"
+              name="plot-number"
+              class="form-control"
+              placeholder="plot number"
+              aria-label="plot number"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="City"
+              name="city"
+              aria-label="City name"
+            />
+          </div>
+          <div class="col">
+            <select class="form-control" name="region" id="region">
+              <option value="default">Choose region</option>
+              <option value="central">Central</option>
+              <option value="eastern">Eastern</option>
+              <option value="western">Western</option>
+              <option value="southern">Southern</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <p class="labels">Type of Business <span class="danger">*</span></p>
+          <div class="col">
+            <select class="form-control" name="business-type" id="region">
+              <option value="Default">Choose Type of Business</option>
+              <option value="Agriculture">agriculture</option>
+              <option value="Manufacturing">Manufacturing</option>
+              <option value="Tourism">Tourism</option>
+              <option value="Construction">Construction</option>
+              <option value="Hospitality">Hospitality</option>
+              <option value="Education">Education</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <p class="labels">
+            Description of Business <span class="danger">*</span>
+          </p>
+          <div class="col">
+            <textarea
+              type="text"
+              class="form-control"
+              name="description"
+              placeholder=""
+              aria-label="text area"
+            ></textarea>
+          </div>
+        </div>
+      </form>
+      <button class="btn-primary btn" onclick="">REGISTER BUSINESS</button>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="forms.js"></script>
+  </body>
+</html>
