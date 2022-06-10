@@ -252,3 +252,33 @@ let biz_category = ()=>{
     par10.style.color = 'green';
    }
 }
+
+// validate business description
+let biz_desc = () =>{
+    const bizDescription = document.regForm.description;
+
+    let par11 = document.getElementById('para11');
+    const letters = /^[A-Za-z\s]+$/;
+
+    if ( bizDescription.value == "" || bizDescription.value.length >= 100 )
+    {
+       
+        par11.textContent = "Describe your business, keep it short"
+        par11.style.color = 'red';
+        
+        
+
+    }
+    else if (!bizDescription.value.match(letters)){
+        bizDescription.style.border = '3px solid red'
+        
+        par11.textContent = "No special characters allowed!"
+        par11.style.color = 'red';
+        
+    
+    }
+    else{
+        par11.textContent = "✔️"
+        par11.style.color = 'green';
+    }
+}
