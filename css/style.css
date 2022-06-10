@@ -1,5 +1,6 @@
 body {
   background-color: rgba(127, 255, 212, 0.11);
+  
 }
 
 .container {
@@ -11,6 +12,7 @@ body {
   font-weight: 500;
   font-size: 25px;
   margin-bottom: 2px;
+  ;
 }
 .heading {
   text-align: center;

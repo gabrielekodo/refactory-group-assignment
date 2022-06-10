@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body onload="formFocus()">
     <nav class="navbar-dark bg-dark">
       <div class="row">
         <div class="col">
@@ -25,17 +25,22 @@
           Please provide all required details to register your business with us
         </p>
       </div>
-      <form>
+      <!-- Vendor regForm -->
+      <form name= "regForm">
         <div class="row">
           <p class="labels">Business Owner <span class="danger">*</span></p>
           <div class="col">
+            <!-- first name input -->
             <input
               type="text"
               class="form-control"
+              id="firstname"
               name="firstname"
               placeholder="First name"
               aria-label="First name"
+              onblur = "val_fName()"
             />
+            <p id="para1">name cant be blank</p>
           </div>
           <div class="col">
             <input
@@ -44,7 +49,9 @@
               name="lastname"
               placeholder="Last name"
               aria-label="Last name"
+              onblur="val_Lname()"
             />
+            <p id="para2">name cant be blank</p>
           </div>
         </div>
         <div class="row">
