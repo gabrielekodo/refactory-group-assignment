@@ -60,10 +60,12 @@
             <input
               type="text"
               class="form-control"
-              name="business-name"
+              name="businessName"
               placeholder="Business name"
               aria-label="Business name"
+              onblur="val_business()"
             />
+            <p id="para3"></p>
           </div>
         </div>
         <div class="row">
@@ -75,7 +77,9 @@
               name="phone"
               placeholder="Enter contact number"
               aria-label="Contact number"
+              onblur="val_contact()"
             />
+            <p id="para4"></p>
           </div>
         </div>
         <div class="row">
@@ -87,7 +91,9 @@
               class="form-control"
               placeholder=""
               aria-label="email"
+              onblur="val_email()"
             />
+            <p id="para5"></p>
           </div>
         </div>
         <div class="row">
@@ -99,18 +105,22 @@
               name="street"
               placeholder="Street Address"
               aria-label="Street address"
+              onblur="val_street()"
             />
+            <p id="para6"></p>
           </div>
         </div>
         <div class="row">
           <div class="col">
             <input
               type="text"
-              name="plot-number"
+              name="plotNumber"
               class="form-control"
               placeholder="plot number"
               aria-label="plot number"
+              onblur="val_plot()"
             />
+            <p id="para7"></p>
           </div>
         </div>
         <div class="row">
@@ -121,23 +131,28 @@
               placeholder="City"
               name="city"
               aria-label="City name"
+              onblur="val_city()"
             />
+            <p id="para8"></p>
           </div>
+          <!-- region -->
           <div class="col">
-            <select class="form-control" name="region" id="region">
+            <select class="form-control" name="biz_region" onblur= "val_region()">
               <option value="default">Choose region</option>
               <option value="central">Central</option>
               <option value="eastern">Eastern</option>
               <option value="western">Western</option>
               <option value="southern">Southern</option>
+              
             </select>
+            <p id="para9"></p>
           </div>
         </div>
         <div class="row">
           <p class="labels">Type of Business <span class="danger">*</span></p>
           <div class="col">
-            <select class="form-control" name="business-type" id="region">
-              <option value="Default">Choose Type of Business</option>
+            <select class="form-control" name="businessType" id="region" onblur="biz_category()">
+              <option value="Default">Please select business category</option>
               <option value="Agriculture">agriculture</option>
               <option value="Manufacturing">Manufacturing</option>
               <option value="Tourism">Tourism</option>
@@ -145,6 +160,7 @@
               <option value="Hospitality">Hospitality</option>
               <option value="Education">Education</option>
             </select>
+            <p id="para10"></p>
           </div>
         </div>
         <div class="row">
