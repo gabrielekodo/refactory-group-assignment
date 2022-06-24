@@ -26,23 +26,23 @@
         </p>
       </div>
       <!-- Vendor regForm -->
-      <form name= "regForm">
-        <div class="row">
-          <p class="labels">Business Owner <span class="danger">*</span></p>
-          <div class="col">
-            <!-- first name input -->
-            <input
-              type="text"
-              class="form-control"
-              id="firstname"
-              name="firstname"
-              placeholder="First name"
-              aria-label="First name"
-              onblur = "val_fName()"
-            />
-            <p id="para1">name cant be blank</p>
-          </div>
-          <div class="col">
+      <form name= "regForm" class="row g-3">
+        <div class="col-md-6">
+          <label class="labels form-label">Business Owner <span class="danger">*</span></label>
+          <input
+            type="text"
+            class="form-control"
+            id="firstname"
+            name="firstname"
+            placeholder="First name"
+            aria-label="First name"
+            onblur = "val_fName()"
+          />
+          <p id="para1">name can't be blank</p>
+
+        </div>
+          <div class="col-md-6">
+            <label for="lastname" class="labels form-label"><span class="labels">Last Name</span> </label>
             <input
               type="text"
               class="form-control"
@@ -51,26 +51,27 @@
               aria-label="Last name"
               onblur="val_Lname()"
             />
-            <p id="para2">name cant be blank</p>
+            <p id="para2">name can't be blank</p>
           </div>
-        </div>
-        <div class="row">
-          <p class="labels">Business Name <span class="danger">*</span></p>
-          <div class="col">
+        
+        <div class="col-md-6">
+          <label for="businessName" class="labels form-label">Business Name <span class="danger">*</span></label>
+          
             <input
               type="text"
               class="form-control"
               name="businessName"
+              id="businessName"
               placeholder="Business name"
               aria-label="Business name"
               onblur="val_business()"
             />
             <p id="para3"></p>
-          </div>
+          
         </div>
-        <div class="row">
-          <p class="labels">Contact Number <span class="danger">*</span></p>
-          <div class="col">
+        <div class="col-md-6">
+          <label class="labels form-label">Contact Number <span class="danger">*</span></label>
+          
             <input
               type="text"
               class="form-control"
@@ -80,11 +81,11 @@
               onblur="val_contact()"
             />
             <p id="para4"></p>
-          </div>
+          
         </div>
-        <div class="row">
-          <p class="labels">Email <span class="danger">*</span></p>
-          <div class="col">
+        <div class="col-md-6">
+          <label class="labels form-label">Email <span class="danger">*</span></label>
+          
             <input
               type="email"
               name="email"
@@ -94,11 +95,11 @@
               onblur="val_email()"
             />
             <p id="para5"></p>
-          </div>
+          
         </div>
-        <div class="row">
-          <p class="labels">Address <span class="danger">*</span></p>
-          <div class="col">
+        
+          <div class="col-md-6">
+            <label class="labels form-label">Address <span class="danger">*</span></label>
             <input
               type="text"
               class="form-control"
@@ -108,10 +109,11 @@
               onblur="val_street()"
             />
             <p id="para6"></p>
-          </div>
+        
         </div>
-        <div class="row">
-          <div class="col">
+        
+          <div class="col-md-6">
+            <label for="Plotnumber" class="form-label labels">Plot Number</label>
             <input
               type="text"
               name="plotNumber"
@@ -121,10 +123,12 @@
               onblur="val_plot()"
             />
             <p id="para7"></p>
-          </div>
+          
         </div>
-        <div class="row">
-          <div class="col">
+        
+          <div class="col-md-6">
+           <label for="city" class="form-label labels">City</label>
+
             <input
               type="text"
               class="form-control"
@@ -136,7 +140,9 @@
             <p id="para8"></p>
           </div>
           <!-- region -->
-          <div class="col">
+          <div class="col-md-6">
+                        <label for="region" class="form-label labels">Region</label>
+
             <select class="form-control" name="biz_region" onblur= "val_region()">
               <option value="default">Choose region</option>
               <option value="central">Central</option>
@@ -146,11 +152,11 @@
               
             </select>
             <p id="para9"></p>
-          </div>
+          
         </div>
-        <div class="row">
-          <p class="labels">Type of Business <span class="danger">*</span></p>
-          <div class="col">
+        
+          <div class="col-md-6">
+            <label class="labels form-label">Type of Business <span class="danger">*</span></label>
             <select class="form-control" name="businessType" id="region" onblur="biz_category()">
               <option value="Default">Please select business category</option>
               <option value="Agriculture">agriculture</option>
@@ -162,12 +168,13 @@
             </select>
             <p id="para10"></p>
           </div>
-        </div>
-        <div class="row">
-          <p class="labels">
+        
+        
+         
+          <div class="col-12">
+             <label class="labels form-label">
             Description of Business <span class="danger">*</span>
-          </p>
-          <div class="col">
+          </label>
             <textarea
               type="text"
               class="form-control"
@@ -177,10 +184,12 @@
               onblur="biz_desc()"
             ></textarea>
             <p id="para11"></p>
-          </div>
+          
         </div>
+        <div class="col-12">
+    <button type="submit" class="btn btn-lg btn-warning">REGISTER BUSINESS</button>
+  </div>
       </form>
-      <button class="btn-primary btn" onclick="">REGISTER BUSINESS</button>
     </div>
 
     <script src="js/bootstrap.min.js"></script>
